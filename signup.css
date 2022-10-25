@@ -13,13 +13,17 @@
   }
   
   .registerTitle {
-    font-size: 50px;
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
   }
   
   .registerForm {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    color: #4070f4;
+    text-decoration: none;
   }
   
   .registerForm > label {
@@ -27,10 +31,16 @@
   }
   
   .registerInput {
-    padding: 10px;
-    background-color: white;
+   position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
     border: none;
-    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
   }
   
   .registerInput:focus {
@@ -38,14 +48,15 @@
   }
   
   .registerButton {
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: teal;
-    color: white;
-    padding: 10px;
     border: none;
-    border-radius: 10px;
-    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
   
   .registerLoginButton {
@@ -59,3 +70,26 @@
     color: white;
     border-radius: 10px;
   }
+  .form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #4070f4;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.button input:hover{
+    background-color: #265df2;
+}
